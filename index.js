@@ -1,8 +1,14 @@
 var randomNumber1 = Math.floor((Math.random() * 6) + 1);
 var randomNumber2 = Math.floor((Math.random() * 6) + 1);
 
-document.querySelector(".img1").setAttribute("src", "images/dice" + randomNumber1 + ".png")
-document.querySelector(".img2").setAttribute("src", "images/dice" + randomNumber2 + ".png")
+var imageSource1 = "images/dice" + randomNumber1 + ".png";
+var imageSource2 = "images/dice" + randomNumber2 + ".png";
+
+var image1 = document.querySelector(".img1");
+var image2 = document.querySelector(".img2");
+
+image1.setAttribute("src", imageSource1);
+image1.setAttribute("src", imageSource2);
 
 var result = "Refresh Me"
 if (randomNumber1 > randomNumber2){
